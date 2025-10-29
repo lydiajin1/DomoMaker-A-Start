@@ -1,4 +1,5 @@
 const models = require('../models');
+
 const { Domo } = models;
 
 const makerPage = async (req, res) => {
@@ -10,7 +11,7 @@ const makerPage = async (req, res) => {
   } catch (err) {
     console.log(err);
     return res.status(500).json({ error: 'Error retrieving domos!' });
-  }   
+  }
 };
 
 const makeDomo = async (req, res) => {
